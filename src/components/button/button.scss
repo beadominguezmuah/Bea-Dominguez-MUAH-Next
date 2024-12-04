@@ -1,0 +1,10 @@
+.button{
+    &_icon svg{
+        fill: #ffffff;
+        transition: ease-in-out 0.3s;
+    }
+    &_icon:hover svg{
+        fill: #D06959;
+        transition: ease-in-out 0.3s;
+    }
+}

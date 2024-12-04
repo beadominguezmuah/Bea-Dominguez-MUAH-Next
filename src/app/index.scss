@@ -1,0 +1,218 @@
+* {
+  margin: 0px;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  list-style: none;
+  text-decoration: none;
+  text-align: start;
+  transition: ease-in-out 0.7s;
+}
+body{
+  background-color: #FAFAFB ;
+  scroll-behavior: smooth;
+}
+#root{
+  
+  min-height: 100vh;
+}
+section{
+  
+  min-height: calc(100vh - 80px);
+}
+
+//mix
+
+
+//Contenedores
+
+#root {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+   
+}
+
+// Barra Navegación
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+
+//Fuentes
+
+@font-face {
+  font-family: 'Quicksand';
+  src: url('/fonts/Quicksand-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Quicksand';
+  src: url('/fonts/Quicksand-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Quicksand';
+  src: url('/fonts/Quicksand-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Quicksand';
+  src: url('/fonts/Quicksand-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Quicksand';
+  src: url('/fonts/Quicksand-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Dream';
+  src: url('/fonts/FontsFree-Net-Dream-Avenue.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Sirenik';
+  src: url('/fonts/Sirenik-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Sirenik';
+  src: url('/fonts/Sirenik-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Baskerville';
+  src: url('/fonts/BaskervilleMTStd-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Baskerville';
+  src: url('/fonts/BaskervilleMTStd-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Baskerville';
+  src: url('/fonts/BaskervilleMTStd-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Baskerville';
+  src: url('/fonts/BaskervilleMTStd-SemiBd.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Baskerville';
+  src: url('/fonts/BaskervilleMTStd-BoldIt.ttf') format('truetype');
+  font-weight: 700
+}
+
+
+
+.h1 {
+  font-family: "Dream";
+  font-weight: normal;
+  font-size: 40px;
+  color: #2d2a26;
+}
+.h2 {
+  font-family: "Dream";
+  font-weight: normal;
+  font-size: x-large;
+  color: #2d2a26;
+}
+.h3 {
+  font-family: "Baskerville";
+  font-weight: 600;
+  font-size: larger;
+  color: #2d2a26;
+}
+.h4 {
+  font-family: "Baskerville";
+  font-weight: 400;
+  font-size: large;
+  color: #2d2a26;
+  font-style: italic;
+}
+.h5 {
+  font-family: "Baskerville";
+  font-weight: 400;
+  font-size: medium;
+  color: #2d2a26;
+  font-style: italic;
+}
+.p{
+  font-family: "Quicksand";
+  font-weight: 500;
+  font-size: medium;
+  color: #2d2a26;
+}
+.span {
+  font-family: "Quicksand";
+  font-weight: 200;
+  font-size: medium;
+  color: #2d2a26;
+}
+
+.spicy {
+  font-family: "Sirenik";
+  font-weight: 700;
+}
+.dream {
+  font-family: "Dream";
+}
+.it {
+  font-style: italic;
+}
+.bold {
+  font-weight: normal;
+}
+
+.f-w {
+  color: #FAFAFB;
+}
+.f-faint {
+  color: #D9D9D9;
+}
+.f-dim {
+  color: #766E64;
+}
+.active {
+  color: #D06959;
+}
+@media (min-width: 800px) { /* Ajusta el tamaño mínimo según sea necesario */
+  a:hover {
+    color: #DEA89C;
+  }
+}
