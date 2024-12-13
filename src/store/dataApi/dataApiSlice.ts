@@ -8,12 +8,12 @@ const dataApiSlice = createSlice({
   name: 'dataApi',
   initialState,
   reducers: {
-    filterGrooming(state){
-        state.data = 10
+    allData(state){
+      state.data -= 1
     }
   }
 });
 
-export const {} = dataApiSlice.actions
+export const {allData} = dataApiSlice.actions
 
 export default dataApiSlice.reducer

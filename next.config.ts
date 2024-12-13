@@ -6,6 +6,14 @@ const nextConfig = {
       {
         protocol: 'https',
         hostname: 'beadominguezmuah.s3.eu-north-1.amazonaws.com',
+        port: '',
+        pathname: '/Fotos/**'
+      },
+      {
+        protocol: 'https',
+        hostname: 'beadominguezmuah.s3.eu-north-1.amazonaws.com',
+        port: '',
+        pathname: '/logos/**'
       },
     ],
   },

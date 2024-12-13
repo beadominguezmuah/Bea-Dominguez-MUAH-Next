@@ -1,0 +1,61 @@
+
+.viewer{
+    width: 100vw;
+    height: 100vh;
+
+    position: fixed;
+    top: 0px;
+    left: 0px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10vh 0;
+    
+    &_main{
+        position: relative;
+        width: 80%;
+        height: 80%;
+        z-index: 5;
+        display: flex;
+        justify-content: center;
+        figure{
+            height: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        .img{
+            width: 100%;
+            object-fit: contain;
+        }
+        .close{
+            position: absolute;
+            right: 0px;
+            top: -40px;
+            svg{
+                fill: #ffffff;
+                transition: ease-in-out 0.3s;
+            }
+        }
+        .close:hover{
+            svg{
+                fill: #D06959;
+                transition: ease-in-out 0.3s;
+            }
+        }
+        .back{
+            display: flex;
+            align-items: center;
+        }
+        .next{
+            display: flex;
+            align-items: center;
+        }
+    }
+}
+@media (max-width: 520px) {
+    .viewer_main{
+        width: 100%;
+    }
+}

@@ -1,10 +1,12 @@
-import '../../work.scss'
-import '../../grids.scss'
-import WorkGrooming from "../page";
+
+import '../work.scss'
+import '../grids.scss'
+import { WorkPage } from "@/components";
 import { fetchAllPhotosData } from '@/api/allPhotosData';
 
+
 export const metadata = {
-  title: 'Bea Domínguez MUAH | Work | Grooming',
+  title: 'Bea Domínguez MUAH | Work | Woman',
   description: 'Explora los trabajos de Bea Domínguez, maquilladora y peluquera profesional, experta en moda, eventos y producciones."',
   keywords: ['maquilladora profesional', 'peluquera', 'Bea Domínguez', 'MUAH', 'maquillaje profesional', 'peluquería', 'maquilladora moda', 'maquilladora eventos', 'maquillaje producciones', 'estilismo', 'belleza', 'looks personalizados', 'maquillaje y peluquería', 'MUAH Work'],
   icons: {
@@ -33,30 +35,19 @@ export const metadata = {
   },
 };
 
-interface PhotoId {
-  id: string;
+interface WorkProps {
+  id?: string,
 }
 
-export async function generateStaticParams() {
+export default  async function WorkWoman({ id }: WorkProps) {
 
-  const allPhotosData = await fetchAllPhotosData();
+  const data = await fetchAllPhotosData();
 
-  const filteredData = allPhotosData?.filter(item => item?.tags?.includes('Grooming')) || [];
-
-  return filteredData.map((obj: PhotoId) => ({ id: obj.id.toString() }));
-}
-
-
-export default async function WorkGroomingId({
-  params,
-}: {
-  params: Promise<{ id: string }>;
-}) {
-  const resolvedParams = await params;
-  const id = resolvedParams.id.toString();
+  const filteredData = data?.filter(item => item?.tags?.includes('Woman')) || [];
+  
 
 
   return (
-    <WorkGrooming id={id}/>
+    <WorkPage data={filteredData} id={id} path='/work/woman'/>
   );
 }

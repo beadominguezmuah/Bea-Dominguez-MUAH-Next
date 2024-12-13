@@ -21,7 +21,7 @@ export const Header = () => {
         <nav className='header_nav'>
             <ul>
                 <HeaderNavItem title='Grooming' />
-                <HeaderNavItem title='Women' />
+                <HeaderNavItem title='Woman' />
                 <HeaderNavItem title='Kids' />
                 <HeaderNavItem title='Advertising' />
                 {/* <HeaderNavItem title='Celebs' /> */}

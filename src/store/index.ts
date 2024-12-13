@@ -1,12 +1,11 @@
-import { configureStore } from '@reduxjs/toolkit'
-
-import  dataApiSlice from './dataApi/dataApiSlice'
+import { configureStore } from '@reduxjs/toolkit';
+import dataApiReducer from './dataApi/dataApiSlice';
 
 export const store = configureStore({
   reducer: {
-    dataApiSlice 
+    dataApi: dataApiReducer,
   },
-})
+});
 
-export type RootState = ReturnType<typeof store.getState>
-export type AppDispatch = typeof store.dispatch
+export type RootState = ReturnType<typeof store.getState>;
+export type AppDispatch = typeof store.dispatch;

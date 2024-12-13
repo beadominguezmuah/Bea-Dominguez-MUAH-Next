@@ -19,10 +19,7 @@ export const HeaderNavItem = ({title}: Props) => {
   
   return (
     <li>
-        <Link className={`h4 ${location.includes(title) ? 'active' : ''}`} href={location.includes(title.toLowerCase()) ? '/work' : ('/work/' + title.toLowerCase())} >{title}</Link>
+        <Link className={`h4 ${location.includes(title.toLowerCase()) ? 'active' : ''}`} href={location.includes(title.toLowerCase()) ? '/work' : ('/work/' + title.toLowerCase())} >{title}</Link>
     </li>
   )
 }
-{/* <li><Link 
-                    className={`h4 ${location.pathname === '/Grooming' ? 'active' : ''}`} 
-                    href={location.pathname === '/Grooming' ? '/' : '/Grooming'}>Grooming</Link></li> */}
