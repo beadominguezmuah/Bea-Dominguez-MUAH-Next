@@ -46,6 +46,7 @@ interface WorkProps {
     const data = await fetchAllPhotosData();
 
 
+
     return (
         <WorkPage data={data} id={id} path='/work' />
     );

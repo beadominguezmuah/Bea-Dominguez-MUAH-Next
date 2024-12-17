@@ -4,7 +4,11 @@ import './header.scss'
 import {HeaderNavItem} from './HeaderNavItem'
 import Image from 'next/image'
 
-export const Header = () => {
+interface HeaderProps {
+    nav?: boolean
+  }
+
+export const Header = ({nav }: HeaderProps) => {
 
   return (
     <header className='header'>
@@ -18,7 +22,8 @@ export const Header = () => {
         </Link>
         
         
-        <nav className='header_nav'>
+        {!nav &&
+            <nav className='header_nav'>
             <ul>
                 <HeaderNavItem title='Grooming' />
                 <HeaderNavItem title='Woman' />
@@ -27,12 +32,12 @@ export const Header = () => {
                 {/* <HeaderNavItem title='Celebs' /> */}
             </ul>
 
-        </nav>
+        </nav>}
 
         <nav className='header_info'>
             {/* <Link href={"/About"} className=" h5 ">About me</Link> */}
-            <a  className=" h5 " href="mailto:tuemail@ejemplo.com?subject=Consulta&body=Hola, me gustaría obtener más información.">tuemail@ejemplo.com </a>
-            {/* <Link href={"/Legal"} className=" h5 ">Legal notice</Link> */}
+            <Link href={"/legal"} className=" h5 ">Legal notice</Link>
+            <a  className=" h5 " href="mailto:beadominguezmuah@gmail.com?subject=Consulta&body=Hola, me gustaría obtener más información.">beadominguezmuah@gmail.com </a>
         </nav>
     </header>
   )

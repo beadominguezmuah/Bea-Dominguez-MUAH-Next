@@ -57,7 +57,7 @@ export const ViewerNav = ({ data, path, id }: viewerNavProps) => {
 
         if (viewportWidth !== window.innerWidth) {
             setViewportWidth(window.innerWidth)
-        }
+        } 
 
         return () => window.removeEventListener('resize', handleResize);
     }, []);

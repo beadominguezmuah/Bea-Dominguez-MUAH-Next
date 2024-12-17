@@ -1,8 +1,10 @@
+'use client'
 import Link from 'next/link'
 import './photoViewer.scss'
 import { IoIosArrowBack, IoIosArrowForward, IoIosClose } from "react-icons/io";
 import { Button } from "@/components";
 import Image from "next/image";
+
 interface PhotosDataType {
     id: number;
     title: string;
@@ -57,8 +59,8 @@ export const Viewer = ({data, id, path}: ViewerProps) => {
             <Link
                 href={path}
                 scroll={false}
-                className='absolute top-12 right-1/4 z-20' >
-                <Button icon={<IoIosClose size={30} />} type="icon" />
+                className='close' >
+                <Button icon={<IoIosClose size={40} />} type="icon" />
             </Link>
             <section className='viewer z-10'>
                 <main className='viewer_main'>
@@ -66,7 +68,9 @@ export const Viewer = ({data, id, path}: ViewerProps) => {
                         <Link className='back'
                         href={`${path}/${allIds[backPosition].id}`}
                         scroll={false} >
-                        <Button icon={<IoIosArrowBack size={30} />} type="icon" />
+                        <Button
+                            icon={<IoIosArrowBack size={30} />} 
+                            type="icon" />
                     </Link>}
 
                     <figure>

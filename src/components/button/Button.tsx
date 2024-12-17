@@ -9,12 +9,14 @@ interface ButtonProps {
 }
 
 export const Button = ({icon, type, route }: ButtonProps) => {
-    const router = useRouter();
-    const goTo = (to: string) => {
-        
-        router.push(`${to}`);
-    }
+   
+        //go to with shallow
 
+        const router = useRouter()
+
+        const goTo = (url: string) => {
+            router.push(`${url}`)
+        }
 
     switch(type){
         case 'icon':

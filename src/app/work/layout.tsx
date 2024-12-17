@@ -1,11 +1,8 @@
 
 
-import { Inter } from 'next/font/google'
-import './globals.css'
-import './index.scss'
-import { Providers } from '@/store/Providers'
-
-const inter = Inter({ subsets: ['latin'] })
+import { Footer, Header } from '../../components/index'
+import '../globals.css'
+import '../index.scss'
 
 export const metadata = {
     title: 'Bea Domínguez MUAH | Work',
@@ -38,7 +35,7 @@ export const metadata = {
 };
 
 
-export default function RootLayout({
+export default function workLayout({
     children,
 }: {
     children: React.ReactNode
@@ -46,12 +43,10 @@ export default function RootLayout({
 
 
     return (
-        <html lang="es">
-            <body className={inter.className}>
-                <Providers>
+        <>
+                <Header></Header>
                     {children}
-                </Providers>
-            </body>
-        </html>
+                <Footer/>
+        </>
     )
 }

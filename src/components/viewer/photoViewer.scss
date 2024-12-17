@@ -22,6 +22,7 @@
         justify-content: center;
         figure{
             height: 100%;
+            min-width: 40%;
             display: flex;
             justify-content: center;
         }
@@ -29,21 +30,7 @@
             width: 100%;
             object-fit: contain;
         }
-        .close{
-            position: absolute;
-            right: 0px;
-            top: -40px;
-            svg{
-                fill: #ffffff;
-                transition: ease-in-out 0.3s;
-            }
-        }
-        .close:hover{
-            svg{
-                fill: #D06959;
-                transition: ease-in-out 0.3s;
-            }
-        }
+
         .back{
             display: flex;
             align-items: center;
@@ -54,8 +41,27 @@
         }
     }
 }
+.close{
+    position: absolute;
+    right: 10%;
+    top: 10%;
+    z-index: 20;
+    svg{
+        fill: #ffffff;
+        transition: ease-in-out 0.3s;
+    }
+}
+.close:hover{
+    svg{
+        fill: #D06959;
+        transition: ease-in-out 0.3s;
+    }
+}
 @media (max-width: 520px) {
     .viewer_main{
         width: 100%;
+        figure{
+            width: 80%;
+        }
     }
 }
