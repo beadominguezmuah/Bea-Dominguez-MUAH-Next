@@ -79,7 +79,8 @@ export const Viewer = ({data, id, path}: ViewerProps) => {
                             alt={data[objectPosition].alt}
                             width={200}
                             height={200}
-                            quality={100}
+                            quality={80}
+                            priority
                         />
                     </figure>
                     {objectPosition != (allIds.length - 1) &&
