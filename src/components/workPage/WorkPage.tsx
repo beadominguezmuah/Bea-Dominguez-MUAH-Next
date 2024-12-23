@@ -115,6 +115,7 @@ export const WorkPage = ({ id, data, path }: WorkProps) =>{
                                             width={1000}
                                             height={1000}
                                             quality={80}
+                                            placeholder="blur"
                                         />
                                     </Link>
 
