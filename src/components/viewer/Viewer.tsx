@@ -77,9 +77,10 @@ export const Viewer = ({data, id, path}: ViewerProps) => {
                         <Image className='img'
                             src={data[objectPosition].url}
                             alt={data[objectPosition].alt}
-                            width={200}
-                            height={200}
-                            quality={100}
+                            width={400}
+                            height={600}
+                            quality={80}
+                            priority
                         />
                     </figure>
                     {objectPosition != (allIds.length - 1) &&

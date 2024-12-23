@@ -16,12 +16,12 @@ export const metadata = {
   generator: 'Next.js',
   openGraph: {
       title: 'Bea Domínguez MUAH - Work',
-      description: 'This is a detailed description of My Awesome Page.',
-      url: 'src\assets\Captura de pantalla 2024-11-25 174454.png',
+      description: 'Explora los trabajos de Bea Domínguez, maquilladora y peluquera profesional, experta en moda, eventos y producciones.',
+      url: 'https://beadominguezmuah.com/work',
       siteName: 'Bea Domínguez MUAH',
       images: [
           {
-              url: 'https://beadominguezmuah.s3.eu-north-1.amazonaws.com/logos/logobeadominguez_.png',
+              url: 'https://beadominguezmuah.s3.eu-north-1.amazonaws.com/logos/Preview.png',
               width: 1200,
               height: 630,
               alt: 'Bea Domínguez MUAH',
