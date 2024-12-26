@@ -48,6 +48,12 @@ export default function RootLayout({
 
     return (
         <html lang="es">
+            <head>
+                {/* Google Site Verification */}
+                <meta 
+                    name="google-site-verification" 
+                    content="d044nGIGHcbe_3h5YPoxO0oRbEVMJv29Pv0oNe4CGE0" />
+            </head>
             <body className={inter.className}>
                 <Providers>
                     {children}
