@@ -4,6 +4,7 @@ import { Inter } from 'next/font/google'
 import './globals.css'
 import './index.scss'
 import { Providers } from '@/store/Providers'
+import { GoogleAnalytics } from '@next/third-parties/google'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -47,11 +48,18 @@ export default function RootLayout({
 
     return (
         <html lang="es">
+            <head>
+                {/* Google Site Verification */}
+                <meta 
+                    name="google-site-verification" 
+                    content="d044nGIGHcbe_3h5YPoxO0oRbEVMJv29Pv0oNe4CGE0" />
+            </head>
             <body className={inter.className}>
                 <Providers>
                     {children}
                 </Providers>
             </body>
+            <GoogleAnalytics gaId="G-842QT3BHXR" />
         </html>
     )
 }

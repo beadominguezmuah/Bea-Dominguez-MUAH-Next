@@ -112,8 +112,9 @@ export const WorkPage = ({ id, data, path }: WorkProps) =>{
                                         <Image
                                             src={item.url}
                                             alt={item.alt}
-                                            width={400}
-                                            height={400}
+                                            width={1000}
+                                            height={1000}
+                                            quality={80}
                                         />
                                     </Link>
 
