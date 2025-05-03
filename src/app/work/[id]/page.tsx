@@ -3,7 +3,6 @@ import '../work.scss'
 import '../grids.scss'
 import { fetchAllPhotosData } from "@/api/allPhotosData";
 import Work from "../page";
-import next from 'next';
 
 
 export const metadata = {
@@ -44,8 +43,6 @@ export const revalidate = 604800;
 
 export async function generateStaticParams() {
     const allPhotosData = await fetchAllPhotosData();
-
-    next
 
     return allPhotosData.map((obj: PhotoId) => ({ id: obj.id.toString() }));
 }
