@@ -39,6 +39,7 @@ interface PhotoId {
     id: string;
 }
 
+export const revalidate = 604800;
 
 export async function generateStaticParams() {
     const allPhotosData = await fetchAllPhotosData();
